@@ -25,6 +25,7 @@ zmodload zsh/complist
 # Use Shift+Tab to go backwards in menu completion
 bindkey -M menuselect '^[[Z' reverse-menu-complete
 
+# Enables colors plugin for zshrc
 autoload -U colors
 colors
  
