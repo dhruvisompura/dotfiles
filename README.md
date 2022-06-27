@@ -21,7 +21,12 @@ brew bundle dump
 2. Use symlinks for the wanted files from the repo
 
 ```
-ln -s ~/code/dotfiles/.zshrc ~/.zshrc
+ln -s ~/dotfiles/.zshrc ~/.zshrc
+ln -s ~/dotfiles/.aliases ~/.aliases
+ln -s ~/dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/dotfiles/.gitignore ~/.gitignore
+ln -s ~/dotfiles/.vimrc ~/.vimrc
+ln -s ~/dotfiles/.config/starship.toml ~/.config/starship.toml
 ```
 
 ## iTerm
