@@ -1,24 +1,5 @@
 # dhruvi's dotfiles
 
-## Install
-
-1. Clone the repo to the local machine
-2. Use symlinks for the wanted files from the repo
-
-```
-ln -s ~/code/dotfiles/.zshrc ~/.zshrc
-```
-
-## iTerm
-
-Use `Terminal` to setup iTerm
-
-1. Install a [nerd font](https://www.nerdfonts.com/)
-2. Delete configuration file
-3. symlink the configuration file
-4. Check `Load preferences from a custom folder of URL` under Settings
-5. Make sure preferences are being loaded from `~/.iterm`
-
 ## Brewfile
 
 ### Install
@@ -33,6 +14,29 @@ This will also dump applications installed using [`mas`](https://github.com/mas-
 ```
 brew bundle dump
 ```
+
+## Install
+
+1. Clone the repo to the local machine
+2. Use symlinks for the wanted files from the repo
+
+```
+ln -s ~/code/dotfiles/.zshrc ~/.zshrc
+```
+
+## iTerm
+
+Use `Terminal` to setup iTerm
+
+1. Install a [nerd font](https://www.nerdfonts.com/)
+    - This step will be done if the Brewfile was ran
+2. Ensure that the ```~/.iterm``` directory exists with a file ```com.googlecode.iterm2.plist```
+    - If ```~/.iterm`/com.googlecode.iterm2.plist``` does not exist:
+        - Create directory ```~/.iterm```
+        - Open iTerm -> Preferences and check the box to "Load preferenes from a custom foler or URL"
+3. Delete ```com.googlecode.iterm2.plist``` in ```~/.iterm```
+3. Symlink the configuration file from this repository to ```Users/dhruvisompura/.iterm/com.googlecode.iterm2.plist```
+5. Make sure preferences are being loaded from `~/.iterm`
 
 ### Git Config
 
