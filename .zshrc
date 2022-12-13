@@ -69,6 +69,7 @@ git_prompt() {
     printf "%s" "$1$branchName$state"
 }
 
+# Setup git prompt if starhsip is missing
 if ! type starship &> /dev/null; then
     setopt PROMPT_SUBST
 
@@ -79,8 +80,8 @@ if ! type starship &> /dev/null; then
     PROMPT+='%{$reset_color%}'
     PROMPT+=$'\n'                                       # newline to end
     PROMPT+='❯ '                                        # End symbol
-fi 
- 
+fi
+
 # Enable vim mode
 bindkey -v
 
@@ -98,8 +99,10 @@ if type fzf &> /dev/null && fd -V &> /dev/null; then
     export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 fi
 
+# Source local zsh file
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
 
+# Use starship if present
 if type starship &> /dev/null; then
     eval "$(starship init zsh)"
 fi
