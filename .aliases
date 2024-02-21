@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # zshrc Shortcut
-alias vsh="vim ~/.zshrc"
-alias vshl="vim ~/.zshrc.local"
+alias zsh="vim ~/.zshrc"
+alias zshl="vim ~/.zshrc.local"
 # Clear
 alias c="clear"
 
