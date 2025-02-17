@@ -38,7 +38,7 @@ Use `Terminal` to setup iTerm
 2. Ensure that the ```~/.iterm``` directory exists with a file ```com.googlecode.iterm2.plist```
     - If ```~/.iterm`/com.googlecode.iterm2.plist``` does not exist:
         - Create directory ```~/.iterm```
-        - Open iTerm -> Preferences and check the box to "Load preferenes from a custom foler or URL"
+        - Open iTerm -> Settings -> General -> Settings and check the box to "Load preferences from a custom foler or URL"
 3. Delete ```com.googlecode.iterm2.plist``` in ```~/.iterm```
 3. Symlink the configuration file from this repository to ```Users/dhruvisompura/.iterm/com.googlecode.iterm2.plist```
 5. Make sure preferences are being loaded from `~/.iterm`
